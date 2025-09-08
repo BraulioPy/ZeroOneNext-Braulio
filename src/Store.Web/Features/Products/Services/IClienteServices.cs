@@ -9,5 +9,6 @@ namespace Store.Web.Features.Products.Services
         int Create(ClienteCreateViewModel vm);
         bool Update(ClienteEditarViewModel vm);
         bool Delete(int id);
+
     }
 }
