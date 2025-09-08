@@ -1,0 +1,21 @@
+﻿@model ProductViewModel
+@{
+	ViewData["Title"] = "Detalle";
+
+}
+
+<h1>
+	@Model.Name
+</h1>
+
+<p>
+	<strong>Precio:</strong> @Model.Price.ToString("C")
+</p>
+
+<p>
+	<strong>Descripción:</strong> @Model.Description
+</p>
+<p>
+	<a asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+	<a asp-action="Index">Volver</a>
+</p>
